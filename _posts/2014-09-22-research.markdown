@@ -1,0 +1,15 @@
+---
+layout: default
+img: xion.png
+category: Services
+title: Research:<br>
+description: |
+---
+
+
+I'm interested by the study of the formation of cosmic structures.
+Particularly at hight redshift, during the epoch of reionization.
+
+I'm focused on the development of an adequate subrid model for star formation and stellar feedback at cosmological scale.
+
+<!-- with the goal to understand the  -->

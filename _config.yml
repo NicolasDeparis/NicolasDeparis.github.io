@@ -1,18 +1,42 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
 
-# Site settings
+url: http://yoursite.com
 title: Nicolas Deparis
 email: nicolas.deparis@astro.unistra.fr
-description: > # this means to ignore newlines until "baseurl:"
-  PhD student in astro, cosmo, simulation, blabla... blabla...
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-github_username:  NicolasDeparis
+author: Nicolas Deparis
+description: > # "Write an awesome description for your new site here.
+  You can edit this line in _config.yml. It will appear in your document
+  head meta (for Google search results) and in your feed.xml site
+  description.
+copyright: 'Copyright &copy; 2016 Nicolas Deparis. #All Rights Reserved.'
+credits: ''
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  # - title: twitter
+  #   url: https://twitter.com/SBootstrap
+  - title: email
+    url: mailto:nicolas.deparis@astro.unistra.fr
+    icon: envelope
+  - title: papers
+    url: http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?db_key=AST&db_key=PRE&qform=AST&arxiv_sel=astro-ph&arxiv_sel=cond-mat&arxiv_sel=cs&arxiv_sel=gr-qc&arxiv_sel=hep-ex&arxiv_sel=hep-lat&arxiv_sel=hep-ph&arxiv_sel=hep-th&arxiv_sel=math&arxiv_sel=math-ph&arxiv_sel=nlin&arxiv_sel=nucl-ex&arxiv_sel=nucl-th&arxiv_sel=physics&arxiv_sel=quant-ph&arxiv_sel=q-bio&sim_query=YES&ned_query=YES&adsobj_query=YES&aut_logic=OR&obj_logic=OR&author=Deparis%2CN%0D%0A&object=&start_mon=&start_year=&end_mon=&end_year=&ttl_logic=OR&title=&txt_logic=OR&text=&nr_to_return=200&start_nr=1&jou_pick=ALL&ref_stems=&data_and=ALL&group_and=ALL&start_entry_day=&start_entry_mon=&start_entry_year=&end_entry_day=&end_entry_mon=&end_entry_year=&min_score=&sort=SCORE&data_type=SHORT&aut_syn=YES&ttl_syn=YES&txt_syn=YES&aut_wt=1.0&obj_wt=1.0&ttl_wt=0.3&txt_wt=3.0&aut_wgt=YES&obj_wgt=YES&ttl_wgt=YES&txt_wgt=YES&ttl_sco=YES&txt_sco=YES&version=1
+    icon: university
+  - title: github
+    url: https://github.com/NicolasDeparis
+    icon: github
+  - title: linkedin
+    url: https://www.linkedin.com/in/nicolas-deparis-682553117
+    icon: linkedin

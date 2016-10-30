@@ -1,0 +1,16 @@
+---
+layout: default
+img: AMR.png
+category: Services
+title: Projects:<br>
+description: |
+---
+
+I'm part of the development team of<a href="http://adsabs.harvard.edu/abs/2015MNRAS.454.1012A"> EMMA, an AMR cosmological code specialized in the study of the reionization epoch</a>
+.
+
+<!-- Originally devloped at the Strasbourg Observatory by Dominique Aubert, EMMA is highly parallelized using MPI and CUDA. -->
+
+I develop a python tool for EMMA outputs analyze named pyEMMA (available <a href="https://github.com/NicolasDeparis/pyemma">here</a>).
+
+I am also a contributor of an online astronomical data visualization tool (not publicly available yet).
