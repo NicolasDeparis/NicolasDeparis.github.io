@@ -5,4 +5,4 @@ category: Services
 title: Curiculum Vitae:<br>
 description: |
 ---
-My full CV is available <a href="https://www.overleaf.com/read/dxzvhpzqxnqq">here</a>
+My full CV is available [here](http://nicolasdeparis.github.io/cv-english.pdf)
