@@ -1,8 +1,0 @@
----
-layout: default
-img: xion.png
-category: Services
-title: Curiculum Vitae:<br>
-description: |
----
-My full CV is available [here](http://nicolasdeparis.github.io/cv-english.pdf)
