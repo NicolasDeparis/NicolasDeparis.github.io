@@ -15,15 +15,16 @@
               "openseadragon/helloworld1.dzi",
               "openseadragon/helloworld2.dzi"
             ],
+    
     sequenceMode: true,
     preserveViewport: true,
 
     showNavigator:  true,
-    navigatorAutoFade:  true,
+    navigatorAutoFade:  false,
 
     navigatorPosition: "ABSOLUTE",
     navigatorTop:      "40px",
-    navigatorLeft:     "4px",
+    navigatorLeft:     "5px",
     navigatorHeight:   "130px",
     navigatorWidth:    "130px",
 
@@ -31,29 +32,19 @@
     minZoomLevel: 	1,
     visibilityRatio: 	1,
 
-
-
-    overlays: [{
-        id: 'right-arrow-overlay',
-        x: 0.2008,
-        y: 0.4778,
-        placement: 'RIGHT',
-        checkResize: false
-    }],
-
     });
 
     viewer.scalebar({
 
         sizeAndTextRenderer: OpenSeadragon.ScalebarSizeAndTextRenderer.COSMOLOGY,
         type: OpenSeadragon.ScalebarType.MAP,
-        pixelsPerMeter: 0.000256,
+        pixelsPerMeter: 0.001243986858938258,
         minWidth: "65px",
         location: OpenSeadragon.ScalebarLocation.TOP_LEFT,
         xOffset: 5,
         yOffset: 180,
         stayInsideImage: true,
-        color: "rgb(150, 150, 150)",
+        color: "rgb(100, 100, 100)",
         fontColor: "rgb(100, 100, 100)",
         backgroundColor: "rgba(255, 255, 255, 0.75)",
         fontSize: "small",
@@ -63,10 +54,12 @@
     </script>
 
 
-
-Visualisation Nicolas Deparis. <br>
-CODA simulation. <br>
+CODA II simulation. <br>
+(64 cMpc/h)^3. <br>
+Gaz density at redshift z=6.2.<br>
 Run with EMMA on TITAN supercomputer. <br>
+Visualisation Nicolas Deparis. <br>
+
 2017
 </body>
 </html>
