@@ -2,18 +2,71 @@
 <html>
 <body>
 
-    <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
+    <div id="openseadragon1" style="width: 800px; height: 800px;"></div>
     <script src="openseadragon/openseadragon.min.js"></script>
+    <script src="openseadragon/openseadragon-scalebar.js"></script>
+
     <script type="text/javascript">
     var viewer = OpenSeadragon({
     id: "openseadragon1",
+    prefixUrl: "openseadragon/images/",
+
+    tileSources: [
+              "openseadragon/helloworld1.dzi",
+              "openseadragon/helloworld2.dzi"
+            ],
+    sequenceMode: true,
+    preserveViewport: true,
+
     showNavigator:  true,
     navigatorAutoFade:  true,
-    prefixUrl: "openseadragon/images/",
-    tileSources: "openseadragon/helloworld.dzi"
+
+    navigatorPosition: "ABSOLUTE",
+    navigatorTop:      "40px",
+    navigatorLeft:     "4px",
+    navigatorHeight:   "130px",
+    navigatorWidth:    "130px",
+
+    defaultZoomLevel: 	1,
+    minZoomLevel: 	1,
+    visibilityRatio: 	1,
+
+
+
+    overlays: [{
+        id: 'right-arrow-overlay',
+        x: 0.2008,
+        y: 0.4778,
+        placement: 'RIGHT',
+        checkResize: false
+    }],
+
     });
+
+    viewer.scalebar({
+
+        sizeAndTextRenderer: OpenSeadragon.ScalebarSizeAndTextRenderer.COSMOLOGY,
+        type: OpenSeadragon.ScalebarType.MAP,
+        pixelsPerMeter: 0.000256,
+        minWidth: "65px",
+        location: OpenSeadragon.ScalebarLocation.TOP_LEFT,
+        xOffset: 5,
+        yOffset: 180,
+        stayInsideImage: true,
+        color: "rgb(150, 150, 150)",
+        fontColor: "rgb(100, 100, 100)",
+        backgroundColor: "rgba(255, 255, 255, 0.75)",
+        fontSize: "small",
+        barThickness: 2
+    });
+
     </script>
 
 
+
+Visualisation Nicolas Deparis. <br>
+CODA simulation. <br>
+Run with EMMA on TITAN supercomputer. <br>
+2017
 </body>
 </html>
