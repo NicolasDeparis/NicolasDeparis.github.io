@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <div id="openseadragon1" style="width: 800px; height: 800px;"></div>
+    <script src="openseadragon/openseadragon.min.js"></script>
+    <script src="openseadragon/openseadragon-scalebar.js"></script>
+
+    <script type="text/javascript">
+    var viewer = OpenSeadragon({
+    id: "openseadragon1",
+    prefixUrl: "openseadragon/images/",
+
+    tileSources: [
+              "openseadragon/helloworld1.dzi",
+              "openseadragon/helloworld2.dzi"
+            ],
+    
+    sequenceMode: true,
+    preserveViewport: true,
+
+    showNavigator:  true,
+    navigatorAutoFade:  false,
+
+    navigatorPosition: "ABSOLUTE",
+    navigatorTop:      "40px",
+    navigatorLeft:     "5px",
+    navigatorHeight:   "130px",
+    navigatorWidth:    "130px",
+
+    defaultZoomLevel: 	1,
+    minZoomLevel: 	1,
+    visibilityRatio: 	1,
+
+    });
+
+    viewer.scalebar({
+
+        sizeAndTextRenderer: OpenSeadragon.ScalebarSizeAndTextRenderer.COSMOLOGY,
+        type: OpenSeadragon.ScalebarType.MAP,
+        pixelsPerMeter: 0.001243986858938258,
+        minWidth: "65px",
+        location: OpenSeadragon.ScalebarLocation.TOP_LEFT,
+        xOffset: 5,
+        yOffset: 180,
+        stayInsideImage: true,
+        color: "rgb(100, 100, 100)",
+        fontColor: "rgb(100, 100, 100)",
+        backgroundColor: "rgba(255, 255, 255, 0.75)",
+        fontSize: "small",
+        barThickness: 2
+    });
+
+    </script>
+
+
+CODA II simulation. <br>
+(64 cMpc/h)^3. <br>
+Gaz density at redshift z=6.2.<br>
+Run with EMMA on TITAN supercomputer. <br>
+Visualisation Nicolas Deparis. <br>
+
+2017
+</body>
+</html>
